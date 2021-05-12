@@ -28,4 +28,17 @@
 
 .home__headerRight > .MuiSvgIcon-root {
     margin-right: 20px;
+    color: var(--text-decor-color);
 }
+.home__body {
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+.home__body > img {
+    object-fit: contain;
+    height: 100px;
+}
+
