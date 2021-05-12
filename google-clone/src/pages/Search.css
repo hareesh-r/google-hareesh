@@ -33,7 +33,7 @@
     justify-content: center;
     margin-top: 30px;
 }
-.search__buttons .btnTxt{ 
+.search__buttons button{ 
     color : var(--text-decor-color);
 }
 
@@ -52,4 +52,7 @@
     border: 1px solid var(--button-highlight);
     color: var(--text-decor-color);
     background-image: -webkit-linear-gradient(top , var(--button-overlay-top) , var(--button-overlay-bottom) );
+}
+.search__buttons .btnTxt {
+    display: none !important;
 }
