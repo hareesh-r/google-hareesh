@@ -20,3 +20,30 @@
     margin: unset;
     max-width: unset;
 }
+
+.searchPage__option > .MuiSvgIcon-root , .searchPage__option a {
+    color: var(--search-options);
+}
+
+.searchPage__options {
+    display: flex;
+    align-items: center;
+}
+.searchPage__optionsLeft , .searchPage__optionsRight {
+    display: flex;
+    align-items: center;
+}
+
+.searchPage__optionsLeft a, .searchPage__optionsRight a{
+    text-decoration: none;
+}
+
+.searchPage__optionsRight {
+    margin-left: 80px;
+}
+
+.searchPage__option {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
