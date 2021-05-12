@@ -9,6 +9,7 @@
     margin: 0 auto;
     margin-top: 40px;
     max-width: 560px;
+    background-color: var(--toggle);
 }
 
 .search__input > input {
@@ -34,4 +35,21 @@
 }
 .search__buttons .btnTxt{ 
     color : var(--text-decor-color);
+}
+
+.search__buttons button {
+    margin: 5px;
+    padding: 7px 15px;
+    background-color: var(--toggle);
+    border: 1px solid var(--toggle);
+    text-transform: inherit;
+    color: #5f6368;
+}
+
+.search__buttons button:hover {
+    box-shadow: 0 1px 1px var(--text-decor-color);
+    background-color: var(--toggle);
+    border: 1px solid var(--button-highlight);
+    color: var(--text-decor-color);
+    background-image: -webkit-linear-gradient(top , var(--button-overlay-top) , var(--button-overlay-bottom) );
 }

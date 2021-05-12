@@ -6,4 +6,10 @@
   --toggle: #ffffff;
   --text-decor-color: rgba(255, 255, 255, 0.87);
   --text-decor-color: rgba(0,0,0,0.87);
+  --button-highlight: #222;
+  --button-highlight: #c6c6c6;
+  --button-overlay-top: #282828;
+  --button-overlay-top: #f8f8f8;
+  --button-overlay-bottom: #202020;
+  --button-overlay-bottom: #f1f1f1;
 }
