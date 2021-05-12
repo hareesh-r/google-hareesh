@@ -14,4 +14,6 @@
   --button-overlay-bottom: #f1f1f1;
   --search-options: rgba(255, 255, 255, 0.87);
   --search-options: gray;
+  --search-count: #eee3e3;
+  --search-count: #70757a;
 }

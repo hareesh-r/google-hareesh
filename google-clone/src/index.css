@@ -1,7 +1,9 @@
 *{
   margin: 0;
 }
-
+html{
+background-color: var(--toggle);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
