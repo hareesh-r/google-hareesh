@@ -1,3 +1,9 @@
 *{
   margin: 0;
 }
+:root {
+  --toggle: #24242b;
+  --toggle: #ffffff;
+  --text-decor-color: rgba(255, 255, 255, 0.87);
+  --text-decor-color: rgba(0,0,0,0.87);
+}
