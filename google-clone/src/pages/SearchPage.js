@@ -17,11 +17,23 @@ function SearchPage() {
     const [{ term }, dispatch] = useStateValue();
     const { data } = useGoogleSearch(term);
 
-    console.log(data);
-    console.log(term);
+    const myFunction = () => {
+        var y = document.getElementById("home1").className;
+        if (y.length == 10) {
+            document.getElementById("home1").classList.add("dark-mode");
+            document.getElementById("home2").classList.add("dark-mode");
+        }
+        else {
+            document.getElementById("home1").classList.remove("dark-mode");
+            document.getElementById("home2").classList.remove("dark-mode");
+        }
+    }
+
+
     return (
+        
         <>
-            <div className="searchPage">
+            <div className="searchPage" id="home1" >
                 <div className="searchPage__header">
                     <Link to="/">
                         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" />
@@ -29,6 +41,7 @@ function SearchPage() {
                 </div>
                 <div className="searchPage__Headerbody">
                     <Search hideButtons />
+                    <button onClick={myFunction}>Toggle dark mode</button>
                     <div className="searchPage__options">
                         <div className="searchPage__optionsLeft">
                             <div className="searchPage__option">
@@ -72,7 +85,7 @@ function SearchPage() {
                 </div>
 
             </div>
-            <div className="searchPage__Body">
+            <div className="searchPage__Body" id="home2">
                 {
                     term && (<div className="searchPage__results">
                  

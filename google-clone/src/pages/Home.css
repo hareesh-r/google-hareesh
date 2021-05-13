@@ -42,3 +42,9 @@
     height: 100px;
 }
 
+.home__headerLeft button{
+    color: var( --text-decor-color);
+    background-color: var( --toggle);
+    border-radius: 999px;
+    border-width: thin;
+}

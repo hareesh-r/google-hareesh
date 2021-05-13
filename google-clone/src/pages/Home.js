@@ -14,7 +14,6 @@ function Home() {
         else {
             document.getElementById("home1").classList.remove("dark-mode");
         }
-        console.log(y.length)
     }
 
     return (

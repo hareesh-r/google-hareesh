@@ -1,3 +1,10 @@
+body {
+    background-color: var(--toggle);
+}
+html{
+    background-color: var(--toggle);
+    }
+
 .searchPage__header a > img {
     object-fit: contain;
     height: 50px;
@@ -19,9 +26,6 @@
     width: unset;
     margin: unset;
     max-width: unset;
-}
-.searchPage__Headerbody {
-    flex: 1;
 }
 
 .searchPage__option > .MuiSvgIcon-root , .searchPage__option a {
