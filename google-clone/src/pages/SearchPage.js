@@ -95,42 +95,73 @@ function SearchPage() {
                                 <p className="searchPage__resultCount">
                                     About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime}) seconds for {term}
                                 </p>) : (
-                                    <p>
-                                        Search Results Unavailable Trail 100 searches Expired Please contact the developer - <code>
-                                            hareeshprogrammer@gmail.com
+                                <p>
+                                    Search Results Unavailable Trail 100 searches Expired Please contact the developer - <code>
+                                        hareeshprogrammer@gmail.com
                                         </code>
-                                        <h3>
-                                            You Searched for
+                                    <h3>
+                                        You Searched for
                                         </h3>
-                                        <h1>
-                                            {term}
-                                        </h1>
+                                    <h1>
+                                        {term}
+                                    </h1>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                </p>
+                            )}
+                            {data?.items && (data?.items.map((item) => (
+                                <div className="searchPage__result">
+                                    <a href={item.link}>
+                                        {
+                                            item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
+                                                <img className="searchPage__resultImage" src={
+                                                    item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src
+                                                }
+                                                    alt="" />
+                                            )}
+
+
+
+                                        {item.displayLink}</a>
+                                    <a className="searchPage__resultTitle" href={item.link}>
+                                        <h2>{item.title}</h2>
+                                    </a>
+                                    <p className="searchPage__resultSnippet">
+
+                                        {item.snippet}
+
                                     </p>
-                                )}
-                        {data?.items && (data?.items.map((item) => (
-                                    <div className="searchPage__result">
-                                        <a href={item.link}>
-                                            {
-                                                item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
-                                                    <img className="searchPage__resultImage" src={
-                                                        item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src
-                                                    }
-                                                        alt="" />
-                                                )}
-
-
-
-                                            {item.displayLink}</a>
-                                        <a className="searchPage__resultTitle" href={item.link}>
-                                            <h2>{item.title}</h2>
-                                        </a>
-                                        <p className="searchPage__resultSnippet">
-
-                                            {item.snippet}
-
-                                        </p>
-                                    </div>
-                                )))}
+                                </div>
+                            )))}
                         </div>
                     )
                 }
