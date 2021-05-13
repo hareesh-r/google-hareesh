@@ -99,6 +99,12 @@ function SearchPage() {
                                         Search Results Unavailable Trail 100 searches Expired Please contact the developer - <code>
                                             hareeshprogrammer@gmail.com
                                         </code>
+                                        <h3>
+                                            You Searched for
+                                        </h3>
+                                        <h1>
+                                            {term}
+                                        </h1>
                                     </p>
                                 )}
                         {data?.items && (data?.items.map((item) => (
