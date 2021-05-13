@@ -21,7 +21,7 @@ function SearchPage() {
         var y = document.getElementById("home1").className;
         if (y.length === 10) {
             document.getElementById("home1").classList.add("dark-mode");
-            document.getElementById("home2").classList.add("dark-mode");            
+            document.getElementById("home2").classList.add("dark-mode");
             document.getElementById("root").classList.add("dark-mode");
         }
         else {
@@ -33,7 +33,7 @@ function SearchPage() {
 
 
     return (
-        
+
         <>
             <div className="searchPage" id="home1" >
                 <div className="searchPage__header">
@@ -89,36 +89,43 @@ function SearchPage() {
             </div>
             <div className="searchPage__Body" id="home2">
                 {
-                    term && (<div className="searchPage__results">
-                 
-                    <p className="searchPage__resultCount">
-                        About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime}) seconds for {term}
-                    </p>
-                        {data?.items.map( (item) => (
-                            <div className="searchPage__result">
-                                <a href={item.link}>
-                                     {
-                                        item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
-                                            <img className="searchPage__resultImage" src={
-                                                item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src
-                                            }
-                                            alt="" />
-                                        )} 
-                                    
-                                    
-                                    
-                                    {item.displayLink}</a>
-                                <a className="searchPage__resultTitle" href={item.link}>
-                                    <h2>{item.title}</h2>
-                                </a>
-                                <p className="searchPage__resultSnippet">
-                                
-                                        {item.snippet}
-                                    
-                                </p>
-                            </div>
-                        ))}
-                </div>
+                    term && (
+                        <div className="searchPage__results">
+                            {data?.searchInformation ? (
+                                <p className="searchPage__resultCount">
+                                    About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime}) seconds for {term}
+                                </p>) : (
+                                    <p>
+                                        Search Results Unavailable Trail 100 searches Expired Please contact the developer - <code>
+                                            hareeshprogrammer@gmail.com
+                                        </code>
+                                    </p>
+                                )}
+                        {data?.items && (data?.items.map((item) => (
+                                    <div className="searchPage__result">
+                                        <a href={item.link}>
+                                            {
+                                                item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
+                                                    <img className="searchPage__resultImage" src={
+                                                        item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src
+                                                    }
+                                                        alt="" />
+                                                )}
+
+
+
+                                            {item.displayLink}</a>
+                                        <a className="searchPage__resultTitle" href={item.link}>
+                                            <h2>{item.title}</h2>
+                                        </a>
+                                        <p className="searchPage__resultSnippet">
+
+                                            {item.snippet}
+
+                                        </p>
+                                    </div>
+                                )))}
+                        </div>
                     )
                 }
             </div>
