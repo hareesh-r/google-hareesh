@@ -8,7 +8,7 @@ import Search from "./Search";
 function Home() {
     const myFunction = () => {
         var y = document.getElementById("home1").className;
-        if (y.length == 4) {
+        if (y.length === 4) {
             document.getElementById("home1").classList.add("dark-mode");
         }
         else {
