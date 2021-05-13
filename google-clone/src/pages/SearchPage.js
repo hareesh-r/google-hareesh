@@ -41,7 +41,6 @@ function SearchPage() {
                 </div>
                 <div className="searchPage__Headerbody">
                     <Search hideButtons />
-                    <button onClick={myFunction}>Toggle dark mode</button>
                     <div className="searchPage__options">
                         <div className="searchPage__optionsLeft">
                             <div className="searchPage__option">
@@ -83,6 +82,7 @@ function SearchPage() {
                         </div>
                     </div>
                 </div>
+                <button onClick={myFunction}>Toggle dark mode</button>
 
             </div>
             <div className="searchPage__Body" id="home2">

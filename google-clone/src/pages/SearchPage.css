@@ -3,7 +3,7 @@ body {
 }
 html{
     background-color: var(--toggle);
-    }
+}
 
 .searchPage__header a > img {
     object-fit: contain;
@@ -93,4 +93,15 @@ html{
     height: 20px;
     width: 20px;
     margin-right: 10px;
+}
+.searchPage button{
+    margin-top: 17px;
+    margin-left: 20px;
+}
+
+.searchPage button{
+    color: var( --text-decor-color);
+    background-color: var( --toggle);
+    border-radius: 999px;
+    border-width: thin;
 }
