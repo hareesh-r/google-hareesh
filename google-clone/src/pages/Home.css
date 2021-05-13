@@ -48,3 +48,14 @@
     border-radius: 999px;
     border-width: thin;
 }
+
+@media only screen and (max-width: 600px) {
+    .home__headerLeft a {
+        display: none;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .home__headerRight a{
+        display: none;
+    }
+}
