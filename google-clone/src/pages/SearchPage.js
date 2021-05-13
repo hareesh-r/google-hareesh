@@ -74,10 +74,10 @@ function SearchPage() {
             </div>
             <div className="searchPage__Body">
                 {
-                    true && (<div className="searchPage__results">
+                    term && (<div className="searchPage__results">
                  
                     <p className="searchPage__resultCount">
-                        About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime} seconds) for {term}
+                        About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime}) seconds for {term}
                     </p>
                         {data?.items.map( (item) => (
                             <div className="searchPage__result">

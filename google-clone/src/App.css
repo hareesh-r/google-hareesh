@@ -2,18 +2,20 @@
   margin: 0;
 }
 :root {
-  --toggle: #24242b;
   --toggle: #ffffff;
-  --text-decor-color: rgba(255, 255, 255, 0.87);
   --text-decor-color: rgba(0,0,0,0.87);
-  --button-highlight: #222;
   --button-highlight: #c6c6c6;
-  --button-overlay-top: #283028;
   --button-overlay-top: #f8f8f8;
-  --button-overlay-bottom: #202030;
   --button-overlay-bottom: #f1f1f1;
-  --search-options: rgba(255, 255, 255, 0.87);
   --search-options: gray;
-  --search-count: #eee3e3;
   --search-count: #70757a;
+}
+.dark-mode { 
+--toggle: #24242b;
+--search-count: #eee3e3;
+--search-options: rgba(255, 255, 255, 0.87);
+--button-overlay-bottom: #202030;
+--button-overlay-top: #283028;
+--button-highlight: #222;
+--text-decor-color: rgba(255, 255, 255, 0.87);
 }
