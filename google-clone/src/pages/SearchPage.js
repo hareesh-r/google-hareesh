@@ -19,13 +19,15 @@ function SearchPage() {
 
     const myFunction = () => {
         var y = document.getElementById("home1").className;
-        if (y.length == 10) {
+        if (y.length === 10) {
             document.getElementById("home1").classList.add("dark-mode");
-            document.getElementById("home2").classList.add("dark-mode");
+            document.getElementById("home2").classList.add("dark-mode");            
+            document.getElementById("root").classList.add("dark-mode");
         }
         else {
             document.getElementById("home1").classList.remove("dark-mode");
             document.getElementById("home2").classList.remove("dark-mode");
+            document.getElementById("root").classList.remove("dark-mode");
         }
     }
 
